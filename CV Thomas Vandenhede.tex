@@ -7,7 +7,7 @@
 \defaultfontfeatures{Scale=MatchLowercase, Mapping=tex-text}
 \RequirePackage{color, graphics}
 \usepackage[usenames, dvipsnames]{xcolor}
-\usepackage[left=2.5cm, right=2.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage[left=1.2cm, right=1.2cm, top=0.8cm, bottom=0.8cm]{geometry}
 \usepackage{supertabular}
 \usepackage{titlesec}
 \usepackage{multicol}
@@ -21,10 +21,6 @@
 \usepackage[absolute]{textpos}
 \usepackage{enumitem}
 \usepackage{tabularx}
-
-% \makeatletter
-% \renewcommand*{\@biblabel}[1]{\hfill[#1]}
-% \makeatother
 
 % Redefine fontawesome social icons
 \newfontfamily{\FA}{[FontAwesome.otf]}
@@ -41,102 +37,120 @@
 \begin{document}
 
 \begin{minipage}[t]{\textwidth}
-	\begin{tabularx}{\linewidth}{@{}l l X c l@{}}
-		\MapMarkerIcon	& 50 avenue Charles Tellier		& & \EnvelopeIcon	& \href{mailto:thomasvandenhede@hotmail.com}{thomasvandenhede@hotmail.com}\\
-						& 78800 Houilles				& & \GithubIcon		& \href{https://github.com/ThomasVandenhede/}{github.com/ThomasVandenhede/}\\
-		\PhoneIcon		& 06 59 27 88 42				& & \CodepenIcon	& \href{https://codepen.io/ThomasVandenhede/}{codepen.io/ThomasVandenhede/}\\
-	\end{tabularx}
+	\begin{minipage}{0.39\textwidth}
+		\textbf{\large Thomas Vandenhede}\\
+		
+		\textbf{\Large Développeur Full Stack}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+		\begin{tabularx}{\linewidth}{@{}l l X c l@{}}
+			\MapMarkerIcon	& 50 avenue Charles Tellier		& & \EnvelopeIcon	& \href{mailto:thomasvandenhede@hotmail.com}{thomasvandenhede@hotmail.com}\\
+			& 78800 Houilles				& & \GithubIcon		& \href{https://github.com/ThomasVandenhede/}{github.com/ThomasVandenhede/}\\
+			\PhoneIcon		& 06 59 27 88 42				& & \CodepenIcon	& \href{https://codepen.io/ThomasVandenhede/}{codepen.io/ThomasVandenhede/}\\
+		\end{tabularx}
+	\end{minipage}
 \end{minipage}
-\bigskip
+\smallskip
 
-%\bigskip
 %\begin{center}
-%	$\left\{\qquad
-%		\begin{tabular}{@{}c@{}}
-%			\Huge\textbf{Thomas Vandenhede}\medskip\\
-%			\LARGE Développeur Web Front-End
-%		\end{tabular}
-%	\qquad\right\}$
+%	\huge \textbf{Développeur Full Stack}\smallskip\\
 %\end{center}
-%\bigskip
-
-\begin{center}
-	\Huge \textbf{Thomas Vandenhede}\smallskip\\
-	\LARGE Développeur Web Front-End\bigskip
-\end{center}
-
-\section{Formation}
-\begin{education}
-	\degree{Septembre 2016}{Master 2 \'Energétique et Matériaux}{Université Paris Ouest Nanterre La Défense}{Ville d'Avray}
-	\degree{2009 --- 2012}{1re et 2e années d'école d’ingénieurs -- Modélisation Mathématique et Mécanique}{Enseirb-Matmeca}{Bordeaux}
-	\degree{2006 --- 2009}{CPGE MPSI / MP}{Lycée Claude Bernard}{Paris}
-	\degree{2006}{Baccalauréat S}{Lycée Les Pierres Vives}{Carrières-sur-Seine}
-\end{education}
 \section{Expérience Professionnelle}
 \begin{experiences}
+	\experience{Avril 2019 --- Présent}{Développeur Mobile – Formateur}
+	{\hfill}
+	{\href{https://www.virtuoworks.com}
+		{VirtuoWorks}}
+	{
+		\textsc{Ajout de fonctionnalités à l’application mobile VirtuoCity}\\
+		\hangindent=1.0em --~Développement d’un sélecteur de thème au sein de l’application \textsc{VirtuoCity} sous Ionic 2\\
+		\textsc{Développement de fonctionnalités et migration pour le jeu mobile World Snowball Fight}\\
+		\hangindent=1.0em --~Migration de Ionic 2 à Ionic 4.\\
+		\hangindent=1.0em --~Mise en place de l’In-App Purchase (achats intégrés).\\
+		\hangindent=1.0em --~Développements d’effets visuels en canvas.\\
+		\hangindent=1.0em --~Développement d’un backend Firebase faisant appel aux technologies Firestore, Firebase Auth et Cloud Functions. Sécurisation du backend avec Firebase Security Rules.
+	}
+	
+	\experience{Mars 2018 \em Mars 2019}
+	{Développeur Front-End ReactJS}
+	{\hfill}
+	{\href{https://www.ulule.com}{Ulule}}
+	{Développement et Maintenance de Modules JavaScript. Collaboration au sein d’une équipe web de 10 personnes fonctionnant en mode agile. Participation aux sprints et daily scrum meetings. Utilisation de git et GitHub dans un contexte collaboratif.\\}
+	
 	\experience{Février 2016 Août 2016}
 	{Stage Modélisation Environnementale (Acoustique \& \'Emissions)}
 	{\hfill}
 	{\href{http://www.env-isa.com}{Envisa}}
 	{\hangindent=1.0em --~Développement de scripts en langage \python pour l'automatisation de la collecte et de l'analyse de données bruit et émissions.
-
-	\hangindent=1.0em --~Logiciel \python de calcul des émissions des engins de piste pour les aéroports dans le cadre du projet européen Open-ALAQS. Utilisation de bases de données \sql (SQLite) et du framework \qt (PyQt).
-	
-	\hangindent=1.0em --~Administration de site web \wordpress.}
+		
+		\hangindent=1.0em --~Logiciel \python de calcul des émissions des engins de piste pour les aéroports dans le cadre du projet européen Open-ALAQS. Utilisation de bases de données \sql (SQLite) et du framework \qt (PyQt).
+		
+		\hangindent=1.0em --~Administration de site web \wordpress.}
 	\experience{Mai 2013 Juillet 2013}
 	{Stage Modélisation de Coûts de Maintenance Aéronautique}
 	{\hfill}
 	{\href{http://www.safran-transmission-systems.com}{Hispano-Suiza}}
-	{\hangindent=1.0em --~Développement, au cours d'un stage de 3 mois, d'un outil de modélisation des coûts de maintenance aéronautique sous Excel (\office) faisant appel à \visb (VBA).}
+	{\hangindent=1.0em --~Développement d'un outil de modélisation de coûts de maintenance aéronautique sous Excel (\office) faisant appel à \visb (VBA).}
 \end{experiences}
-\section{Compétences Informatiques \& Langages}
-\vspace{-0.5em}
+\vspace{-0.5cm}
+\section{Formation}
+\begin{education}
+	\textsc{Mars 2018 --- Mars 2019} & \begin{tabu}{@{} X @{}}
+		\textbf{Contrat Pro Développeur Web Full Stack JS}, \href{https://www.ifocop.fr}{\textsc{IFOCOP}}, Paris XI\\
+	\hangindent=1.0em --~Projet de Jeu CV développé entièrement en ECMAScript 5 (aucune librairie externe). Fonctionnalités : compatibilité IE9, tactile, son, collisions, physique et particules.\\
+	\hangindent=1.0em --~Projet de jeu multijoueur en temps réel sous pug, node.js, express.js, socket.io et mongodb.\\
+	\hangindent=1.0em --~Projet de réseau social.
+	\end{tabu}\\
+	\multicolumn{2}{c}{}\\ [-1ex]
+	\textsc{Octobre 2016 --- Février 2018} & \begin{tabu}{@{} X @{}}
+		\textbf{Formations en ligne, MOOC}\\
+	\href{https://www.codecademy.com}{www.codecademy.com} / \href{https://www.codeschool.com}{www.codeschool.com}\\
+	Lectures d'ouvrages spécialisés. Liste disponible à l’adresse : \href{http://amzn.eu/g28QJrg}{http://amzn.eu/g28QJrg}
+	\end{tabu}\\
+	\multicolumn{2}{c}{}\\ [-1ex]
+	\degree{Septembre 2016}{Master 2 \'Energétique et Matériaux}{Université Paris Ouest Nanterre La Défense}{Ville d'Avray}
+	\degree{2009 --- 2012}{1re et 2e années d'école d’ingénieurs -- Modélisation Mathématique et Mécanique}{Enseirb-Matmeca}{Bordeaux}
+	\degree{2006 --- 2009}{CPGE MPSI / MP}{Lycée Claude Bernard}{Paris}
+	\degree{2006}{Baccalauréat S}{Lycée Les Pierres Vives}{Carrières-sur-Seine}
+\end{education}
+\vspace{-0.5cm}
+\section{Compétences Techniques}
+\vspace{-0.3cm}
 \begin{skillslisting}
-	\skills{\threeskill}{\python}
-	\skills{\twoskill}{\bootstrap}
-	\skills{\threeskill}{\html}
-	\skills{\threeskill}{\sass}
-	\skills{\threeskill}{\js}
-	\skills{\threeskill}{\jquery}
-	\skills{\twoskill}{\react}
-	\skills{\oneskill}{\angular}
-	\skills{\threeskill}{\sql}
-	\skills{\twoskill}{\git}
-	\skills{\twoskill}{\refac}
-	\skills{\twoskill}{\patterns}
-	\skills{\oneskill}{GNU / \linux}
-	\skills{\oneskill}{\visb}
-	\skills{\twoskill}{\LaTeX}
-	\skills{\twoskill}{\matlab}
+	\skills{}{\react}
+	\skills{}{\angular / Angular}
+	\skills{}{\jquery}
+	\skills{}{Ionic}
+	\skills{}{\html / Pug}
+	\skills{}{\sass / \bootstrap}
+	\skills{}{\js / TypeScript}
+	\skills{}{\sql / MongoDB}
+	\skills{}{\git}
+	\skills{}{Scrum}
+	\skills{}{\refac}
+	\skills{}{\patterns}
+	\skills{}{GNU / \linux}
+	\skills{}{\python}
+	\skills{}{\visb}
+	\skills{}{\LaTeX}
 \end{skillslisting}
-\vspace{-0.5em}
-\begin{footnotesize}
-	\oneskill Basique \hfill
-	\twoskill Intermédiaire \hfill
-	\threeskill Avancé
-\end{footnotesize}
-\section{Langues}
-\begin{tabu} to \textwidth {@{} X[1,r] X[5,l] @{}}
-	\textbf{Français} & Langue maternelle\\
-	\textbf{Anglais} & Lu, parlé et écrit avec aisance \em (Score TOEIC : 985 sur 990)\\
-	\textbf{Espagnol} & Niveau scolaire\\
-	\textbf{Italien} & Notions\\
-	\textbf{Russe} & Notions. \em (Séjour 1 mois à Moscou, certificat d'étude délivré par l'Institut d'état de langue russe A.S. Pouchkine)\\
-	\textbf{Polonais} & Notions
-\end{tabu}
-\vspace{0.1cm}
-
-%\section{Personal and Open Source Projects}
-%\begin{tabularx}{\textwidth}{@{}p{3cm}|X@{}}
-%	\proj{matsciseg}
-%	{Framework for propagated 3D volume segmentation, used in my
-%	dissertation work.  Algorithms created in \python and \cpp and
-%	exposed as a web API using \django. Includes a web application
-%	that consumes the API created in \js, and \jquery.}
-%	{github.com/malloc47/matsciseg}
-%\end{tabularx}
-
+\vspace{-0.6cm}
+\section{Compétences Linguistiques}
+\begin{minipage}[t]{0.5\textwidth}
+	\begin{tabu} to \textwidth {@{} X[1,r] X[5,l] @{}}
+		\textbf{Français} & Langue maternelle\\
+		\textbf{Anglais} & Lu, parlé et écrit avec aisance \em (Score TOEIC : 985 sur 990)\\
+		\textbf{Espagnol} & Niveau scolaire\\
+	\end{tabu}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+	\begin{tabu} to \textwidth {@{} X[1,r] X[5,l] @{}}
+		\textbf{Italien} & Notions\\
+		\textbf{Russe} & Notions. \em (Séjour 1 mois à Moscou, certificat d'étude délivré par l'Institut d'état de langue russe A.S. Pouchkine)\\
+	\end{tabu}	
+\end{minipage}
+\vspace{-0.3cm}
 \section{Activités \& Centres d'Intérêt}
-Programmation orientée objet, programmation web, langues étrangères, tennis.
+Guitare, langues étrangères, tennis, pâtisserie, zéro déchet.
 
 \end{document}
